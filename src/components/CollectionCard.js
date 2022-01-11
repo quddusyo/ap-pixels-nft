@@ -1,7 +1,7 @@
 import weth from '../assets/weth.png'
 import './CollectionCard.css'
 
-const CollectionCard = ({id, name, traits, description, image}) => {
+const CollectionCard = ({ id, name, traits, description, image }) => {
     return (
         <div className='collectionCard'>
             <img src={image} alt='' />

@@ -1,10 +1,17 @@
 .main {
   max-height: 50vh;
 }
+
 .mainContent {
   display: flex;
   padding-bottom: 20px;
   border-bottom: 1px solid #fff;
+}
+
+.mainContentDark {
+  display: flex;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #000;
 }
 
 .pixelHighlight {
@@ -32,16 +39,15 @@
   flex-direction: column;
   justify-content: space-between;
   flex: 0.75;
-  color: #fff;
 }
 
 .title {
-  font-size: 96px;
+  font-size: 80px;
   font-weight: 800;
 }
 
 .itemNumber {
-  color: #a1a5b0;
+  color: #90939b;
   font-size: 72px;
   align-self: center;
 }
@@ -82,6 +88,12 @@
 
 .ownerHandle {
   color: #00ebfe;
+  font-weight: 800;
+}
+
+.ownerHandleLight {
+  color: #8a0606;
+  font-weight: 800;
 }
 
 .ownerLink {
@@ -93,7 +105,34 @@
   margin: 0 0 0 10px;
 }
 
+.instagramContainer {
+  background: linear-gradient(to right, #d83dec, #fb3958);
+}
+
+.twitterContainer {
+  background: linear-gradient(to right, #3ebaeb, #073caf);
+}
+
+.moreContainer {
+  background: linear-gradient(to right, #515052, #272727);
+}
+
+.ownerLinkLight {
+  padding: 12px;
+  border-radius: 50px;
+  height: 50px;
+  width: 50px;
+  border: 1px solid rgb(80, 79, 79);
+  margin: 0 0 0 10px;
+  background: rgb(255, 255, 255);
+}
+
 .ownerLink > img {
+  height: 100%;
+  width: 100%;
+}
+
+.ownerLinkLight > img {
   height: 100%;
   width: 100%;
 }

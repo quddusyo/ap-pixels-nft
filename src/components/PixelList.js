@@ -2,7 +2,7 @@ import React from 'react'
 import CollectionCard from './CollectionCard'
 import './PixelList.css'
 
-const PixelList = ({ pixelListData, setSelectedPixel }) => {
+const PixelList = ({ pixelListData, setSelectedPixel, themeSwitch }) => {
     return (
         <div className='pixelList'>
             {pixelListData.map(pixel => (

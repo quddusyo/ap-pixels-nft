@@ -2,6 +2,7 @@ import './Header.css'
 import pixelLogo from '../assets/header/ApPixel-logo.png'
 import searchIcon from '../assets/header/search.png'
 import themeSwitchIcon from '../assets/header/theme-switch.png'
+import themeSwitchIconLight from '../assets/header/theme-switch-light.png'
 
 const Header = ({ search, setSearch, themeSwitch, setThemeSwitch }) => {
     return (
@@ -10,14 +11,17 @@ const Header = ({ search, setSearch, themeSwitch, setThemeSwitch }) => {
                 <img src={pixelLogo} className='pixelLogo' alt='' />
             </div>
 
-            <form className='searchBar' onSubmit={(e) => e.preventDefault()}>
+            <form
+                className={ themeSwitch ? 'searchBar' : 'searchBarLight' }
+                onSubmit={(e) => e.preventDefault()}
+            >
                 <label className='searchIconContainer' htmlFor='search'>
                     <img src={searchIcon} alt='' />
 
                 </label>
                 <input 
                  id='search'
-                 className='searchInput'
+                 className={ themeSwitch ? 'searchInput' : 'searchInputDark' }
                  placeholder='Collection, item or user...'
                  type='text'
                  value={search}
@@ -33,10 +37,10 @@ const Header = ({ search, setSearch, themeSwitch, setThemeSwitch }) => {
 
             <div className='headerActions'>
                 <button
-                    className='themeSwitchContainer'
+                    className={themeSwitch ? 'themeSwitchContainer' : 'themeSwitchContainerLight'}
                     onClick={() => setThemeSwitch(!themeSwitch)}
                 >
-                    <img src={themeSwitchIcon} alt='' />
+                    <img src={themeSwitch ? themeSwitchIcon : themeSwitchIconLight} alt='' />
                 </button>
             </div>
 

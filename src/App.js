@@ -24,11 +24,7 @@ function App() {
   }, [])
 
   return (
-    <div className="App"
-      style={{
-        backgroundColor: themeSwitch ? '#000' : '#FFF'
-      }}
-    >
+    <div className={ themeSwitch ? 'app' : 'appDark'}>
       <Header 
         search={search}
         setSearch={setSearch}
@@ -45,6 +41,7 @@ function App() {
           <PixelList
             pixelListData={pixelListData.filter(pixel => ((pixel.name).toLowerCase()).includes(search.toLowerCase()))}
             setSelectedPixel={setSelectedPixel}
+            themeSwitch={themeSwitch}
           />
         </>
       )}

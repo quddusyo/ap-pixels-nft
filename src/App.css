@@ -1,5 +1,12 @@
-.App {
+.app {
   background-color: black;
+  padding: 20px;
+  min-height: 100vh;
+  max-width: 100vw;
+}
+
+.appDark {
+  background-color: rgb(250, 250, 250);
   padding: 20px;
   min-height: 100vh;
   max-width: 100vw;
