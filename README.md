@@ -19,7 +19,7 @@
 ## 🛠 Tech Stack
 
 - **Frontend:** React.js, HTML5, CSS3
-- **Web3:** Web3.js / Ethers.js *(to be included if part of this branch)*
+- **Web3:** Web3.js / Ethers.js
 - **Wallets:** Metamask / WalletConnect
 - **Design:** Responsive layout using CSS modules or inline styles
 
